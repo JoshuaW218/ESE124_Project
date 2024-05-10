@@ -42,36 +42,31 @@ int main() {
     int rows, ys;
     char maze[MAX_ROWS][MAX_COLS] = readmaze(&rows, &ys, "maze.txt");
     initialize(&stack);
-    int mx, my;
+    int mx = rows, my = ys; //maze dimensions
     int sx, sy;
     int ex, ey;
 
     int x = sx, y= sy;
 
-    while (x != ex || y != ey) 
+    while (isEmpty(stack)) 
     {
         if (CWR1(position)){
-            push(&stack, *position);
-            y++;
+            BJPI(position,CWR(position));
         }
         else if (CWF1(position))
         {
-            push(&stack, *position);
+            BJPI(position,CWF(position));
         }
         else if (CWL1(position))
         {
-            push(&stack, *position);
+            BJPI(position,CWL(position));
         }
-        else if (CWR1(position))
+        else if (CWB1(position))
         {
-            push(&stack, *position);
-        }
-        else 
-        {
-            
+            BJPI(position,CWB(position));
         }
     }
-
-
+    printf("Maze solved!\n");
+    return 0;
 }
 
