@@ -1,3 +1,5 @@
+//Tim Cheng, Joshua Woo, Timmy Tan
+
 #include "stack.h"
 #define MAX_ROWS 100
 #define MAX_COLS 100

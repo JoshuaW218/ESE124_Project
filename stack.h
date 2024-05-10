@@ -1,3 +1,5 @@
+//Tim Cheng, Joshua Woo, Timmy Tan
+
 #define MAX_SIZE 100
 
 typedef struct {

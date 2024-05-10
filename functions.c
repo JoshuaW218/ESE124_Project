@@ -1,3 +1,5 @@
+//Tim Cheng, Joshua Woo, Timmy Tan
+
 #include "stack.h"
 #include <stdio.h>
 #include <stdlib.h>
