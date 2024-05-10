@@ -17,7 +17,7 @@ void push(Stack *stack, Position pos) {
 }
 
 // Function to pop a position from the stack
-Position pop(Stack *stack) {
+void pop(Stack *stack) {
     if (isEmpty(stack)) {
         printf("Stack underflow\n");
         exit(EXIT_FAILURE);
@@ -26,7 +26,7 @@ Position pop(Stack *stack) {
 }
 
 // Function to peek at the top position of the stack
-Position peek(Stack *stack) {
+void peek(Stack *stack) {
     if (isEmpty(stack)) {
         printf("Stack is empty\n");
         exit(EXIT_FAILURE);

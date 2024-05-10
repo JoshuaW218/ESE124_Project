@@ -13,8 +13,8 @@ typedef struct {
 
 void initialize(Stack *stack);
 void push(Stack *stack, Position pos);
-Position pop(Stack *stack);
-Position peek(Stack *stack);
+void pop(Stack *stack);
+void peek(Stack *stack);
 int isEmpty(Stack *stack);
 int isFull(Stack *stack);
 void clear(Stack *stack);
